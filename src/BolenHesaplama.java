@@ -8,7 +8,7 @@ public class BolenHesaplama {
          */
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Bölenleri bulmak icin pozitif bir tamsayi giriniz.");
+        System.out.println("Bölenleri bulmak için pozitif bir tamsayı giriniz.");
         int sayi = scan.nextInt();
         int bolen = 1;
         int count = 0;
@@ -24,6 +24,19 @@ public class BolenHesaplama {
         }
 
         System.out.println(sayi + " sayisinin bolenleri : " + count + " adettir");
+        
+        bolen=1;
+        count=0;
+            
+            while(bolen <= sayi) {
+                
+                if (sayi % bolen == 0) {
+                    count++; 
+                    System.out.println(count + "- " + bolen);
+                    
+                }
+                bolen++;
+            }
 
         }
 
